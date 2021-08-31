@@ -1,0 +1,109 @@
+*{
+    font-family: "Bodoni MT";
+    color: white;
+}
+body {
+    margin: 0;
+    background-color: cadetblue;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 0px 5px grey;
+}
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #5e2129;
+    
+}
+button:active {
+    background-color: crimson;
+}
+button:focus{
+    outline: none;
+}
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color:#363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 5px grey;
+}
+.col-2{
+    grid-column: span 2;
+}
+#valor-actual{
+    font-size: 1.5em;
+}
+#valor-anterior{
+    font-size: 2em;
+}
+#menu{
+    background-color: black ;
+}
+#menu ul{
+     list-style: none;
+     margin: 0;
+     padding: 0%;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+#menu ul li a:hover{
+    background-color: #5e2129;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+#main-container {
+    margin: 50px auto;
+}
+#table-1 {
+    width: 10px;
+    text-align: center;
+    background-color: black;
+}
+th, td {
+    padding: 20px;
+}
+thead {
+    background-color: crimson;
+    border-bottom: solid 5px;
+    color: white;
+}
